@@ -32,7 +32,7 @@ pipeline {
 
         stage('Build Artifact') {
             steps {
-                sh 'tar --exclude=node_modules --exclude=.git -czf myapp.tar.gz .'
+                sh 'tar --exclude=node_modules --exclude=.git --exclude=myapp.tar.gz -czf myapp.tar.gz .'
                 archiveArtifacts artifacts: 'myapp.tar.gz', fingerprint: true
             }
         }
