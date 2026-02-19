@@ -153,6 +153,10 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 - Completed the setup wizard - installed the plugins when prompted
 
 
+<img width="807" height="521" alt="getting_started_jenkins" src="https://github.com/user-attachments/assets/49ead608-4288-4569-b785-c6bdf7d9f01e" />
+
+<img width="935" height="520" alt="welcome_jenkins" src="https://github.com/user-attachments/assets/a890c65b-3345-44c2-81c4-3b6f1beeed04" />
+
 <br>
 
 
@@ -169,6 +173,13 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 - I added GitHub credentials
 --> Go to manage Jenkins --> Credentials --> Global --> Add Credentials --> Username with password
+
+<br>
+
+<img width="375" height="194" alt="image" src="https://github.com/user-attachments/assets/60cc273a-8cea-48c5-be1c-495610668229" />
+
+<br>
+<br>
 
     Username: your GitHub username
     Password: a GitHub personal token (generate at GitHub --> settings --> Developer Settings --> Personal Access Tokens --> repo scope)
@@ -324,7 +335,14 @@ sudo chown username:username /var/www/myapp
 
 - Clicked Build Now in Jenkins (all 5 stages should complete successfully - Checkout, Install Dependencies, Run Tests, Build Artifact, Deploy)
 
+<br>
 
-** Now, everytime I push code to the main branch Jenkins will automatically detect the change withing 5 minutes, run the pipeline, and deploy the app if all tests pass
+<img width="933" height="491" alt="image" src="https://github.com/user-attachments/assets/5f4f6266-4c89-4834-a0f6-969f946e0f8e" />
+
+<br>
+<br>
+<br>
+
+** Now everytime I push code to the main branch, Jenkins will automatically detect the change withing 5 minutes, run the pipeline, and deploy the app if all tests pass.
 
 
